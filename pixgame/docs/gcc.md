@@ -2,7 +2,7 @@
 
 [&#x2190; Back to Pixgame README.md](../README.md)
 
-There are a few options on Windows: [Mingw (32 bit only)](https://sourceforge.net/projects/mingw/files/latest/download?source=files), MinGW-w64 (either 32 or 64 bit, see directions below), MSys, 
+There are a few options on Windows: [Mingw (32 bit only)](https://sourceforge.net/projects/mingw/files/latest/download?source=files), MinGW-w64 (either 32 or 64 bit, see directions below), [MSys](http://www.msys2.org/) which is basically Cygwin (a POSIX compatibility layer) running MinGW-w64, and many others. However, the choices can be confusing since there are so many. Feel free to use any of the available choices, but if you want to have me pick one for you, simply follow the instructions below:
 
 1. Download the web installer for MinGW-w64: https://sourceforge.net/projects/mingw-w64/ 
 

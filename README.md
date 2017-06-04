@@ -1,4 +1,4 @@
-# &#x1F984; misc
+# &#x1F984; misc &#x1F432;
 
 Misc. projects that haven't been moved to a dedicated repo of their own unless noted.
 
