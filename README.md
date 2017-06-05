@@ -5,6 +5,14 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
  1. [Pixgame](./pixgame/README.md): Playing with a 2D game library.
 
     *Language:* **Go**
+ 
+ 2. [Andlabs Exercise](./andlabsEx/README.md): Playing with Andlabs ui (wrapper for libui) examples.
+
+    *Language:* **Go**
+
+ 3. [wxGo Exercise](./exEg/README.md): Playing with wxGo ui examples.
+
+    *Language:* **Go**
 
 # Contributions and Issues
 
@@ -13,3 +21,5 @@ My intent is not to have important, maintained projects in this repo. If somethi
 # Licenses
 
 Each misc project is licensed under an [MIT license](./LICENSE) unless the project folder contains a license. In that case, use that license for that project instead. Dependencies will also have licenses of thier own, but in most cases won't be in the repo (depending upon the language).
+
+Animal images at the top of this document are [unicode emojis](http://www.alt-codes.net/animal-symbols.php) and might vary in appearance and are not my intellectual property.
