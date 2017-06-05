@@ -10,7 +10,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 3. [wxGo Exercise](./exEg/README.md): Playing with wxGo ui examples.
+ 3. [wxGo Exercise](./wxEg/README.md): Playing with wxGo ui examples.
 
     *Language:* **Go**
 
