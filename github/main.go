@@ -26,6 +26,8 @@ func main() {
 	//unixNow := time.Now().UTC().Format(time.UnixDate)
 	//resetTime := res.Header["X-RateLimit-Reset"]
 	//tillReset := ""
+
+	//time.Time{sec=}
 	fmt.Println("GET:\n", string(body))
 	fmt.Println("Rate Limit Remaining:", res.Header["X-Ratelimit-Remaining"])
 }
