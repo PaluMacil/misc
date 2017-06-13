@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/AllenDang/gform"
-)
+import "github.com/AllenDang/gform"
 
 func main() {
 	gform.Init()
@@ -19,4 +17,9 @@ func main() {
 	mainWindow.Show()
 
 	gform.RunMainLoop()
+}
+
+func btn_onclick(arg *gform.EventArg) {
+	arg.Sender().Hide()
+	gform.Exit()
 }
