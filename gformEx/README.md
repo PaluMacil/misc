@@ -13,4 +13,8 @@ go build
 .\gformex
 ```
 
+I copied the controls demo code to this repo ([see BSD license](.\controls\LICENSE)) because I wondered if the resource file might be necessary for some functionality since it references Microsoft.Windows.Common-Controls (bascially controls available on Windows from the days of VB 6.0). This can be built and run, but there is still no exit, and the common dialogs mentioned don't show. I looked into common controls and realized they might be 32-bit only, though I didn't know for sure until I checked [Stack Overflow](https://stackoverflow.com/questions/836368/is-there-a-64-bit-version-of-microsoft-common-controls-mscomctl-ocx) and looked back at the [Microsoft download page](https://www.microsoft.com/en-us/download/details.aspx?id=10019).
+
+Even though 64-bit Windows can run a 32-bit application just fine, I don't have a lot of interest in compiling for 32-bit. It's possible this library still works great if I compile for 32-bit, and the code still serves as great win32 documentation, so I'll leave this active.
+
 [&#x2190; Back to Project List](../README.md)
