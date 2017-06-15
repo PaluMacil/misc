@@ -1,0 +1,7 @@
+{
+    "vsicons.presets.angular": false,
+    "jshint.options": {
+        "esversion": 6,
+        "asi": true
+    }
+}

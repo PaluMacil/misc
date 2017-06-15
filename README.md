@@ -22,6 +22,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
+ 6. [Electron hello!](./electron-hello/README.md): Simple [Electron](https://electron.atom.io/) example.
+
+    *Language:* **JavaScript**
+
 # Contributions and Issues
 
 My intent is not to have important, maintained projects in this repo. If something grows out of here, it will get its own repo and be linked to from the project readme. However, Feel free to contribute code, raise issues, or ask questions through the issues area. I'll try to respond quickly.
