@@ -1,0 +1,56 @@
+From 85124f2a71c258c6e330b61ffa3f3c123fb52866 Mon Sep 17 00:00:00 2001
+From: Dan Wolf <dan.wolf@ctgcompanies.com>
+Date: Thu, 15 Jun 2017 13:02:53 -0400
+Subject: [PATCH] add NullTime adaptor
+
+---
+ database/SqlDB.go    |  2 +-
+ database/adaptors.go | 26 ++++++++++++++++++++++++++
+ 2 files changed, 27 insertions(+), 1 deletion(-)
+ create mode 100644 database/adaptors.go
+
+diff --git a/database/SqlDB.go b/database/SqlDB.go
+index d1c6109..d6b5986 100644
+--- a/database/SqlDB.go
++++ b/database/SqlDB.go
+@@ -1,4 +1,4 @@
+-package data
++package database
+ 
+ import (
+ 	"context"
+diff --git a/database/adaptors.go b/database/adaptors.go
+new file mode 100644
+index 0000000..24c9023
+--- /dev/null
++++ b/database/adaptors.go
+@@ -0,0 +1,26 @@
++package database
++
++import (
++	"database/sql/driver"
++	"time"
++)
++
++// NullTime adapts nullable datetimes
++type NullTime struct {
++	Time  time.Time
++	Valid bool // Valid is true if Time is not NULL
++}
++
++// Scan implements the Scanner interface.
++func (nt *NullTime) Scan(value interface{}) error {
++	nt.Time, nt.Valid = value.(time.Time)
++	return nil
++}
++
++// Value implements the driver Valuer interface.
++func (nt NullTime) Value() (driver.Value, error) {
++	if !nt.Valid {
++		return nil, nil
++	}
++	return nt.Time, nil
++}
+-- 
+2.13.0.windows.1
+
