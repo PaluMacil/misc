@@ -26,6 +26,12 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **JavaScript**
 
+## Lunch and Learns / Training
+
+ 1. [Git](./git-LnL/README.md): Intro to Git useful information.
+
+ 2. [Go (work in progress)](./Go-LnL/README.md): Some basic information regarding Go. Special focus on http.
+
 # Contributions and Issues
 
 My intent is not to have important, maintained projects in this repo. If something grows out of here, it will get its own repo and be linked to from the project readme. However, Feel free to contribute code, raise issues, or ask questions through the issues area. I'll try to respond quickly.
