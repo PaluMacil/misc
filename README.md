@@ -2,6 +2,8 @@
 
 Misc. projects that haven't been moved to a dedicated repo of their own unless noted.
 
+## Projects
+
  1. [Pixgame](./pixgame/README.md): Playing with a 2D game library.
 
     *Language:* **Go**
