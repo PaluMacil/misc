@@ -24,7 +24,11 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 6. [Electron hello!](./electron-hello/README.md): Simple [Electron](https://electron.atom.io/) example.
+ 6. [Xamo](./Xamo/README.md): An Android example app from official Xamarin docs.
+
+    *Language:* **C#**
+
+ 7. [Electron hello!](./electron-hello/README.md): Simple [Electron](https://electron.atom.io/) example.
 
     *Language:* **JavaScript**
 
