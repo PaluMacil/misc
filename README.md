@@ -32,7 +32,13 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **JavaScript**
 
- 8. [Git Crawl (gitc)](): Bulk commandline TFS to Git migration utility.
+ 8. [Git Crawl (gitc)](./gitc/README.md): Bulk commandline TFS to Git migration utility. Real tool but work in progress.
+
+    *Language:* **Go**
+
+ 9. [wxPy](./wxPy/README.md): Demo app... wxWidgets again, this time wrapped in Python. Easy and zero trouble.
+
+    *Language:* **Python**
 
 ## Lunch and Learns / Training
 
