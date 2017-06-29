@@ -32,6 +32,8 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **JavaScript**
 
+ 8. [Git Crawl (gitc)](): Bulk commandline TFS to Git migration utility.
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.
