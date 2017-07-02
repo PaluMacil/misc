@@ -20,7 +20,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 5. [gForm Exercise](./gformEx/README.md): Attempt to compile win32 ui library, gForm. Appears to be a good project but mostly abandoned, and compiling requires cloning an old commit due to an incorrect pull request. It also uses VB6 Common Controls, which needs 32-bit compilation.
+ 5. [gForm Exercise](./gformEx/README.md): Attempt to compile win32 ui library, gForm. Appears to be a good project but mostly abandoned, and compiling requires cloning an old commit due to an incorrect pull request. It also uses VB6 Common Controls, which needs 32-bit compilation. I won't be fixing this.
 
     *Language:* **Go**
 
