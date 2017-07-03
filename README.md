@@ -36,7 +36,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 9. [wxPy](./wxPy/README.md): Demo app... wxWidgets again, this time wrapped in Python. Easy and zero trouble.
+ 9. [wxPy](./wxPy/README.md): Demo app... wxWidgets again, this time wrapped in Python (wxPython 4, which is a total refresh called Project Phoenix). Easy and zero trouble. One of my favorite open source Python projects!
 
     *Language:* **Python**
 
