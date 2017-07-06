@@ -1,5 +1,10 @@
 # Go Lunch and Learn
 
+[Why Go?](https://dave.cheney.net/2017/03/20/why-go)
+ - Safety
+ - Developer Productivity
+ - Concurrency
+
 [Official Tutorial: Tour of Go](https://tour.golang.org)
 
 [Http notes](./http.md)
