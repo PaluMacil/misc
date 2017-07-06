@@ -1,6 +1,6 @@
 # Go Lunch and Learn
 
-[Why Go?](https://dave.cheney.net/2017/03/20/why-go)
+[Why Go?](https://dave.cheney.net/2017/03/20/why-go) by Dave Cheney
  - Safety
  - Developer Productivity
  - Concurrency
