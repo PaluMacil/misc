@@ -35,3 +35,16 @@
     - Or, if you only want to add changes to previous commit, you could do a `git reset --soft HEAD~` which will undo the previous commit but leave your changes staged.
 
     - If you already pushed, use `git revert HEAD` to create an "undo" commit. This will prevent other repos from getting mixed up. **HEAD** is simply the easy (non-SHA) name for your last commit.
+
+ - **When forking a Go project** you'll be faced with broken import paths if you use go get and suddenly have a new path to your repo. You have two choices.
+
+    - Create the folder path of `GOPATH\src\user\` manually and `git clone https:\\path.git` into there (and go get `./...` in there will still grab your deps) or...
+
+    - Use a named remote that points to your fork. You'll need to use the name in pull / push operations after that:
+    ```
+    go get http://github.com/other-user/repo
+    git remote add my-fork http://github.com/my-user/repo
+
+    git pull --rebase my-fork
+    git push my-fork
+    ```
