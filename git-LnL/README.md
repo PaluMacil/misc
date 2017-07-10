@@ -36,6 +36,11 @@
 
     - If you already pushed, use `git revert HEAD` to create an "undo" commit. This will prevent other repos from getting mixed up. **HEAD** is simply the easy (non-SHA) name for your last commit.
 
+    - Commit your code *yesterday* if you forgot to commit and want the correct date reflected
+    ```
+    git commit --date="`date --date='n day ago'`" -am "Commit Message"
+    ```
+
  - **When forking a Go project** you'll be faced with broken import paths if you use go get and suddenly have a new path to your repo. You have two choices.
 
     - Create the folder path of `GOPATH\src\user\` manually and `git clone https:\\path.git` into there (and go get `./...` in there will still grab your deps) or...
