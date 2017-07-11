@@ -30,8 +30,5 @@
     ```
     - Revert (before push)
     ```
-    git reset --hard <SOME-COMMIT, e.g. ~HEAD>
+    git reset --hard <SOME-COMMIT>
     ```
-    - Or, if you only want to add changes to previous commit, you could do a `git reset --soft HEAD~` which will undo the previous commit but leave your changes staged.
-
-    - If you already pushed, use `git revert HEAD` to create an "undo" commit. This will prevent other repos from getting mixed up. **HEAD** is simply the easy (non-SHA) name for your last commit.
