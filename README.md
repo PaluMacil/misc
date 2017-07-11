@@ -4,7 +4,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
 ## Projects
 
- 1. [Pixgame](./pixgame/README.md): Playing with a 2D game library.
+ 1. [Pixgame](./pixgame/README.md): Playing with a 2D game library named PIXEL.
 
     *Language:* **Go**
  
@@ -12,7 +12,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 3. [wxGo Exercise](./wxEg/README.md): Playing with wxGo ui examples.
+ 3. [wxGo Exercise](./wxEg/README.md): Playing with wxGo ui examples. THis wraps the excellent, full featured wxWidgets library.
 
     *Language:* **Go**
 
@@ -20,7 +20,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 5. [gForm Exercise](./gformEx/README.md): Attempt to compile win32 ui library, gForm. Appears to be a good project but mostly abandoned, and compiling requires cloning an old commit due to an incorrect pull request. It also uses VB6 Common Controls, which needs 32-bit compilation. I won't be fixing this.
+ 5. [gForm Exercise](./gformEx/README.md): Attempt to compile win32 ui library, gForm. Appears to be a good project but mostly abandoned, and compiling requires cloning an old commit due to an incorrect pull request. It also uses VB6 Common Controls, which needs 32-bit compilation. I won't be fixing this as it doesn't seem to be worth using at this point.
 
     *Language:* **Go**
 

@@ -1,6 +1,8 @@
 # Pixgame
 
-This repo is an expiriment for playing with [Pixel](https://github.com/faiface/pixel), a 2D game engine in Go. It supports lots of graphic effects, a game loop, font rendering, optimized sprites and more. If I wind up settling on a genre, graphic style, and storyline, I will probably make a dedicated repo instead of continuing to work on this sub-repo.
+This repo is an experiment for playing with [Pixel](https://github.com/faiface/pixel), a 2D game engine in Go. It supports lots of graphic effects, a game loop, font rendering, optimized sprites and more. This game has more momentum than some similar ones, though Go is still young in this realm of software.
+
+If I wind up settling on a genre, graphic style, and storyline, I will probably make a dedicated repo instead of continuing to work on this sub-repo.
 
 # Compile
 
