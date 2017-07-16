@@ -25,4 +25,24 @@ The author is aware of the issue with the [enter key closing the application](ht
 
 There are several features and fixes that are ready in libui (the C base library) but not ready in package ui (the Go wrapper) because the author is only going to base ui releases on binary releases of libui. If you look at libui, the current work is being done in non-master branches on a new method of font rendering and a table widget which includes functionality for a treeview.
 
+(WIP) The ui package targets the binary libui release tagged alpha 3.1, so I did the following to fix the issue locally in case the author doesn't make the fixes soon:
+
+```
+git clone https://github.com/andlabs/libui
+cd libui
+git checkout alpha3.1
+git checkout -b alpha3.1-maint
+```
+
+Here I edited windows\window.cpp, line 85 to read `if (HIWORD(wParam) != 0 || LOWORD(wParam) <= IDCANCEL)`.
+
+```
+git commit -am "fix crash on dialog ok"
+mkdir build
+cd build
+cmake .. -DBUILD_SHARED_LIBS=OFF
+```
+
+Here I need to gain further understanding of compiling C because I don't really understand the outputs, so I'm not able to add the new binary to the Go package. If anyone can assist, I appreciate it.
+
 [&#x2190; Back to Project List](../README.md)
