@@ -53,3 +53,5 @@
     git pull --rebase my-fork
     git push my-fork
     ```
+
+[&#x2190; Back to Project List](../README.md)

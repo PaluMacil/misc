@@ -10,7 +10,7 @@ The example below here the controls example from the wxGo project.
 
 ```
 go build
-.\wxEG
+.\wxEg
 ```
 
 ![controls](./controls.png)
