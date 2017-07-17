@@ -40,6 +40,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Python**
 
+ 10. [Go Dep](./go-dep-example/README.md): The example bar chart code from [go-chart](https://github.com/wcharczuk/go-chart) with go dep building. I will re-visit this when Go Dep functionality is documented more clearly.
+
+    *Language:* **Go**
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.
