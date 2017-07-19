@@ -44,6 +44,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
+ 11. [Sandbox](./sandbox): Code so trivial that it is basically the Go Playground. These might be examples of what to do, what not to do, demonstration of a single concept in a standard library package, or something similar. I don't have a README or license available for this folder.
+
+    *Language:* **Go**
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.
