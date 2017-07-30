@@ -26,7 +26,7 @@ func main() {
 	c := n.In(loc)
 	fmt.Println(c)
 	/* JAVASCRIPT DATES
-	   (new Date()).toISOString()
+	   (new Date()).toISOString() // Requires shim in IE8.
 	   "2017-07-30T18:17:45.260Z"
 	*/
 	jsTime := "2017-07-30T18:17:45.260Z"
