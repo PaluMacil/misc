@@ -25,6 +25,15 @@ func main() {
 	fmt.Println(loc, e)
 	c := n.In(loc)
 	fmt.Println(c)
+	/* JAVASCRIPT DATES
+	   (new Date()).toISOString()
+	   "2017-07-30T18:17:45.260Z"
+	*/
+	jsTime := "2017-07-30T18:17:45.260Z"
+	fmt.Println("Parse JavaScript dates from (new Date()).toISOString()",
+		jsTime)
+	j, e := time.Parse(time.RFC3339, jsTime)
+	fmt.Println(j, e)
 }
 
 /* GODOC HIGHLIGHTS
