@@ -28,9 +28,9 @@
     ```
     foreach ($i in iex 'git ls-files -i --exclude-from=.gitignore') { git rm --cached $i }
     ```
-    - If you need to remove a single file from history because it was too large for Github (100 MB max). if you want apply these changes to ALL branches, you need to use a `--all` flag instead of `HEAD`
+    - If you need to remove a single file from history because it was too large for Github (100 MB max). if you want apply these changes to ALL branches, you need to use a `--all` flag instead of `HEAD`. This is only for when 100% necessary. If other people have somehow pulled your code, they will lose continuity.
     ```
-    git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch vendor.go' HEAD
+    git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch vendor.go' -f HEAD
     ```
     - Revert (before push)
     ```
