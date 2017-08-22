@@ -3,6 +3,7 @@
 *.dll
 *.so
 *.dylib
+/astilectron-eg/5.single_binary_distribution/vendor.go
 
 # Test binary, build with `go test -c`
 *.test
