@@ -38,11 +38,11 @@
     ```
     git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch vendor.go' -f HEAD
     ```
-    - Revert (before push)
+    - Reset (before push) to to set the files back to the state they were in a previous commit (for example, the parent of HEAD). 
     ```
     git reset --hard <SOME-COMMIT, e.g. ~HEAD>
     ```
-    - Or, if you only want to add changes to previous commit, you could do a `git reset --soft HEAD~` which will undo the previous commit but leave your changes staged.
+    - Or, if you only want to add changes to previous commit, you could do a `git reset --soft HEAD~` which will undo the previous commit but leave your changes staged. In other words, your files won't be touched.
 
     - If you already pushed, use `git revert HEAD` to create an "undo" commit. This will prevent other repos from getting mixed up. **HEAD** is simply the easy (non-SHA) name for your last commit.
 
@@ -53,7 +53,7 @@
 
  - **When forking a Go project** you'll be faced with broken import paths if you use go get and suddenly have a new path to your repo. You have two choices.
 
-    - Create the folder path of `GOPATH\src\user\` manually and `git clone https:\\path.git` into there (and go get `./...` in there will still grab your deps) or...
+    - Create the folder path of `GOPATH\src\user\` manually and `git clone https:\\path.git` into there (and `go get ./...` in there will still grab your deps) or...
 
     - Use a named remote that points to your fork. You'll need to use the name in pull / push operations after that:
     ```
