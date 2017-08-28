@@ -1,0 +1,1 @@
+I haven't done c or C++ since school. I'l using this webview example to try to remember how to use external non-standard library dependencies. The [zserge/webview](https://github.com/zserge/webview) looks pretty good, and I'll probably use the Go part of it in the future if I want a lighter alternative to adding Electron.
