@@ -1,4 +1,7 @@
-CFLAGS ?= -std=c99 -Wall -Wextra -pedantic
+# CFLAGS ?= -std=c99 -Wall -Wextra -pedantic
+CC = gcc
+CFLAGS = -DWEBVIEW_WINAPI=1
+LDFLAGS = -lole32 -lcomctl32 -loleaut32 -luuid -mwindows
 
 ifeq ($(OS),Windows_NT)
 	WEBVIEW_CFLAGS := -DWEBVIEW_WINAPI=1

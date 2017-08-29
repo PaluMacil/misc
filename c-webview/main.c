@@ -1,6 +1,7 @@
 #include <getopt.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 
 #include "webview.h"
 
