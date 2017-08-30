@@ -36,15 +36,15 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
- 9. [wxPy](./wxPy/README.md): Demo app... wxWidgets again, this time wrapped in Python (wxPython 4, which is a total refresh called Project Phoenix). Easy and zero trouble. One of my favorite open source Python projects!
+ 9. [wxPy](./wxPy/README.md): A Demo app. wxWidgets again, this time wrapped in Python (wxPython 4, which is a total refresh called Project Phoenix). Easy and zero trouble. One of my favorite open source Python projects!
 
     *Language:* **Python**
 
- 10. [Go Dep](./go-dep-example/README.md): The example bar chart code from [go-chart](https://github.com/wcharczuk/go-chart) with go dep building. I will re-visit this when Go Dep functionality is documented more clearly.
+10. [Go Dep](./go-dep-example/README.md): The example bar chart code from [go-chart](https://github.com/wcharczuk/go-chart) with go dep building. I will re-visit this when Go Dep functionality is documented more clearly.
 
     *Language:* **Go**
 
- 11. [Sandbox](./sandbox): Code so trivial that it is basically the Go Playground. These might be examples of what to do, what not to do, demonstration of a single concept in a standard library package, or something similar. I don't have a README or license available for this folder.
+11. [Sandbox](./sandbox): Code so trivial that it is basically the Go Playground. These might be examples of what to do, what not to do, demonstration of a single concept in a standard library package, or something similar. I don't have a README or license available for this folder.
 
     *Language:* **Go**
 
