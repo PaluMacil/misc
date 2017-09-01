@@ -48,6 +48,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
+11. [Wincred](./wincred): Example code examining your windows credential store.
+
+    *Language:* **Go**
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.
