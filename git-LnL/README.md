@@ -16,6 +16,9 @@
     - SourceTree
     -	VS Code
     -	Visual Studio
+ -  File Hygiene
+    - Tagging:  `git tag -a v0.2 -m "migration from Bottle to Flask"` This annotates a point in history. As a bonus, the [semantic version](http://semver.org) in the annotation will cause Github to make this a release. If you need more control, consider [creating the release manually](https://help.github.com/articles/creating-releases) on Github. Finally, don't forget to `git push --tags` since they don't get pushed to a remote without explicitly doing so.
+
  -	Tips and Tricks: How do I fix it when I … ?
     - First things first:
     ```
