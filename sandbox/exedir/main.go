@@ -11,6 +11,7 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println(ex)
 	exPath := filepath.Dir(ex)
 	fmt.Println(exPath)
 }
