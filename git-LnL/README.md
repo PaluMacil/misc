@@ -26,6 +26,7 @@
     git config --global user.email dcwolf@gmail.com
     git config --global credential.helper wincred
     ```
+    - If you forget the above before pushing your initial commit, do a quick ` git rebase` and `git commit --amend --author="Dan Wolf <dcwolf@gmail.com>" -m "initial commit"`. You'll need to force the push with `git push -u origin master -f`
     - `.gitignore` and `.gitkeep`
     - Remove ignored files from cache (another term for stage or index)
     ```
