@@ -5,6 +5,8 @@
 *.dylib
 astilectron-eg/5.single_binary_distribution/vendor.go
 
+dist/
+
 # Test binary, build with `go test -c`
 *.test
 DEBUG
