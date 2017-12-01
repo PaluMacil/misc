@@ -103,11 +103,11 @@ git commit --date="`date --date='n day ago'`" -am "Commit Message"
 
 ## Referencing Things
 
- - **^ and ~** The caret (^) specifies which parent, while tilde (~) moves back generations.
+ - **^ and /~** The caret (^) specifies which parent, while tilde (/~) moves back generations.
 
    - If you don't know the order of parents, you can see this through `git log` or `git show`. The order shown here is the order to use in this syntax.
 
-   - "HEAD^ means the first parent of the tip of the current branch. Remember that git commits can have more than one parent. HEAD^ is short for HEAD^1, and you can also address HEAD^2 and so on as appropriate. You can get to parents of any commit, not just HEAD. You can also move back through generations: for example, master~2 means the grandparent of the tip of the master branch, favoring the first parent in cases of ambiguity. These specifiers can be chained arbitrarily , e.g., topic~3^2." (credit: [Greg Bacon](https://stackoverflow.com/users/123109/greg-bacon))
+   - "HEAD^ means the first parent of the tip of the current branch. Remember that git commits can have more than one parent. HEAD^ is short for HEAD^1, and you can also address HEAD^2 and so on as appropriate. You can get to parents of any commit, not just HEAD. You can also move back through generations: for example, master/~2 means the grandparent of the tip of the master branch, favoring the first parent in cases of ambiguity. These specifiers can be chained arbitrarily , e.g., topic/~3^2." (credit: [Greg Bacon](https://stackoverflow.com/users/123109/greg-bacon))
 
    ![](./git-tilde-hat.png)
 
