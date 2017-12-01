@@ -103,7 +103,7 @@ git commit --date="`date --date='n day ago'`" -am "Commit Message"
 
 ## Referencing Things
 
- - **^ and /~** The caret (^) specifies which parent, while tilde (/~) moves back generations.
+ - **^ and /~** The caret (^) specifies which parent, while tilde (&#126) moves back generations.
 
    - If you don't know the order of parents, you can see this through `git log` or `git show`. The order shown here is the order to use in this syntax.
 
