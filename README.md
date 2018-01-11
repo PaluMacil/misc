@@ -52,6 +52,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
+11. [Angular-Electron](./angular-electron/README.md): Example code demonstrating Electron and Angular together with a Photonkit UI.
+
+    *Language:* **TypeScript**
+
 11. [Astilectron](./astilectron-eg): Example code demonstrating Electron in Go (lazy loading or embedding) and go-bindata for embedding.
 
     *Language:* **Go**
