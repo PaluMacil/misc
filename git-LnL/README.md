@@ -83,7 +83,7 @@ git reset --hard <SOME-COMMIT, e.g. ~HEAD>
 
 - If you already pushed, use `git revert HEAD` to create an "undo" commit. This will prevent other repos from getting mixed up. **HEAD** is simply the easy (non-SHA) name for your last commit.
 
-- Commit your code *yesterday* if you forgot to commit and want the correct date reflected
+- Commit your code *yesterday* if you forgot to commit and want the correct date reflected (omit backticks in PowerShell):
 ```
 git commit --date="`date --date='n day ago'`" -am "Commit Message"
 ```
