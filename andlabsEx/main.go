@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/andlabs/ui"
 )
 
@@ -26,6 +28,6 @@ func main() {
 		window.Show()
 	})
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
 	}
 }
