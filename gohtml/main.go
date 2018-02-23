@@ -30,7 +30,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		switch {
 		case r.URL.Path == "/":
-			files.ExecuteTemplate(w, "layout", people)
+			files.ExecuteTemplate(w, "layout", people) //TODO: check error
 		case isFile(r.URL):
 			fs := http.FileServer(http.Dir("web"))
 			fs.ServeHTTP(w, r)
