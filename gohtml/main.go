@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"html/template"
 	"log"
 	"net/http"
+	"net/url"
 	"strings"
 )
 
@@ -28,19 +28,26 @@ func main() {
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fs := http.FileServer(http.Dir("web"))
-		pathParts := strings.Split(r.URL.Path, `/`)
-		lastPart := pathParts[len(pathParts)-1]
-		if strings.Contains(lastPart, ".") {
-			fs.ServeHTTP(w, r)
-		} else if r.URL.Path == "/" { //TODO: simplify logic and make production safe (even examples shouldn't use something dangerous)
+		switch {
+		case r.URL.Path == "/":
 			files.ExecuteTemplate(w, "layout", people)
+		case isFile(r.URL):
+			fs := http.FileServer(http.Dir("web"))
+			fs.ServeHTTP(w, r)
+		default:
+			http.Error(w, http.StatusText(http.StatusNotFound), http.StatusNotFound)
 		}
 	})
 
-	fmt.Println("Now serving on port 3033")
+	log.Println("Now serving on port 3033")
 	err = http.ListenAndServe(":3033", nil)
 	if err != nil {
 		panic(err)
 	}
+}
+
+func isFile(url *url.URL) bool {
+	pathParts := strings.Split(url.Path, `/`)
+	lastPart := pathParts[len(pathParts)-1]
+	return strings.Contains(lastPart, ".")
 }
