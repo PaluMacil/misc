@@ -64,6 +64,14 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **C**
 
+11. [gohtml](./gohtml/README.md): Example code demonstrating Electron in Go (lazy loading or embedding) and go-bindata for embedding.
+
+    *Language:* **Go**
+
+11. [package-sharpener](./package-sharpener/README.md): This is an example used to demonstrate standalone .Net binary compilation for the Core framework.
+
+    *Language*: **C#**
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.
