@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Source\Go\src\github.com\PaluMacil\misc\c-webview\CMakeFiles\066caf5aa5781aae7d2ec350fe7672ae\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{B4EC9073-14DC-3586-A53A-783FC68CD48E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

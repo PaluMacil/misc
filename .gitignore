@@ -203,3 +203,6 @@ FakesAssemblies/
 *.userprefs
 
 .DS_Store
+
+CMakeFiles/
+.vs/
