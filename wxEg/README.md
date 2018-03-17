@@ -15,6 +15,10 @@ go build
 
 ![controls](./controls.png)
 
+## Issue
+
+[Go 1.10 and 1.9.4 workaround](https://github.com/dontpanic92/wxGo/issues/44)
+
 ## License Notes
 
 The examples, the Go wrapper, and wxWidgets seem to be a mix of a permissive wxWindows license (similar to LGPL) and LGPL, which basically means you can use the code with other components of any other license if you link dynamically. I've included the license from the wxGo project in this folder. wxWidgets says:
