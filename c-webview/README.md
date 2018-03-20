@@ -10,7 +10,7 @@ The [usage in Go is very straightforward](..\webview\).
 
  - Still trying to decide how to use the c project. `gcc main.c webview.c -DWEBVIEW_WINAPI=1 -lole32 -lcomctl32 -loleaut32 -luuid -lgdi32 -o webview-example.exe` created a binary but it seems to panic without an error message.
  - Go project looks great! Examples just work (well, except the canvas one). I have mingw64 installed.
- - Compiling a DLL from the 
+ - Compiling a DLL from the output project (see cmake below) seems to produce a file. I haven't tested it.
 
 ```
 cmake .
