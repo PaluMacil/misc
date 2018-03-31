@@ -68,6 +68,10 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language:* **Go**
 
+11. [isAdmin](./isAdmin/README.md): This repo shows how to check if the user has elevated permissions on Windows or Linux.
+
+    *Language:* **Go**
+
 11. [package-sharpener](./package-sharpener/README.md): This is an example used to demonstrate standalone .Net binary compilation for the Core framework.
 
     *Language*: **C#**
