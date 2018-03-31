@@ -35,7 +35,7 @@
     "@angular/language-service": "^5.0.3",
     "@types/node": "~6.0.60",
     "codelyzer": "~4.0.1",
-    "electron": "^1.7.11",
+    "electron": "^1.8.4",
     "ts-node": "~3.2.0",
     "tslint": "~5.8.0",
     "typescript": "~2.4.2"
