@@ -4,8 +4,10 @@
 *.so
 *.dylib
 astilectron-eg/5.single_binary_distribution/vendor.go
-
+obj/
+Migrations/
 dist/
+*.db
 
 # Test binary, build with `go test -c`
 *.test
