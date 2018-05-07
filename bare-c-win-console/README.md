@@ -44,3 +44,6 @@ This assumes See compile.ps1
        string).
  - [Get ip address](https://stackoverflow.com/questions/3989446/get-an-ip-address-string-from-getadaptersaddresses) with
    [GetAdaptersAddresses](https://msdn.microsoft.com/en-us/library/aa365915%28v=VS.85%29.aspx)
+ - USER32.DLL implements the Windows USER component that creates and manipulates the standard elements of the Windows user interface, such as the desktop, windows, and menus. It thus enables programs to implement a graphical user interface (GUI) that matches the Windows look and feel.
+ - kernel32.dll is the 32-bit dynamic link library found in the Windows operating system kernel. It handles memory management, input/output operations, and interrupts. When Windows boots up, kernel32.dll is loaded into a protected memory space so other applications do not take that space over.
+ - [Symantec description of system32 files](https://www.symantec.com/connect/blogs/cwindowssystem32-files-explained)
