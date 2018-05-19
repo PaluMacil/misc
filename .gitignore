@@ -194,6 +194,8 @@ UpgradeLog*.htm
 *.mdf
 *.ldf
 
+/badger/data
+
 # Business Intelligence projects
 *.rdl.data
 *.bim.layout
