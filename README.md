@@ -76,6 +76,20 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language*: **C#**
 
+11. [typeflection](./typeflection/README.md): Reflection examples.
+
+    *Language*: **C#**
+
+11. [console-ef-core](./console-ef-core/README.md): Entity framework Core in a console application.
+
+    *Language*: **C#**
+
+11. [bare c win console](./bare-c-win-console/README.md): This is a bare Windows console app in c. The result is a 5 or 6 kb file.
+
+    *Language*: **C**
+
+11. [Badger Db Demo](./badger/README.md): An LSM / Value Log Key Value Store.
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.

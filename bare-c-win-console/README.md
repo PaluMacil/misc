@@ -55,3 +55,5 @@ Run `.\compile.ps1` to compile.
  - [Symantec description of system32 files](https://www.symantec.com/connect/blogs/cwindowssystem32-files-explained)
  - [How to specify lib path](http://www.mingw.org/wiki/HOWTO_Specify_the_Location_of_Libraries_for_use_with_MinGW)
  - [VS Code Intellisense configuration](https://github.com/Microsoft/vscode-cpptools/blob/master/Documentation/Getting%20started%20with%20IntelliSense%20configuration.md)
+
+[&#x2190; Back to Project List](../README.md)

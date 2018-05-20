@@ -1,3 +1,5 @@
+# Entity Framework Core Console Example
+
 Create Initial Migrations (they will be generated in a new "Migrations" folder):
 
 ```
@@ -29,3 +31,5 @@ Additional Information
  - [ASP.net Core, getting with a new database](https://docs.microsoft.com/en-us/ef/core/get-started/aspnetcore/new-db)
  - [Console app (this) and migrations](https://www.learnentityframeworkcore.com/walkthroughs/console-application)
  - [Npgsql provider for postgres](http://www.npgsql.org/efcore/index.html)
+
+[&#x2190; Back to Project List](../README.md)
