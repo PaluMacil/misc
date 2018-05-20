@@ -90,6 +90,8 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
 11. [Badger Db Demo](./badger/README.md): An LSM / Value Log Key Value Store.
 
+    *Language*: **Go**
+
 ## Lunch and Learns / Training
 
  1. [Git](./git-LnL/README.md): Intro to Git useful information.

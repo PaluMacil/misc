@@ -2,7 +2,7 @@
 
 This repo shows how to check if the user has elevated permissions on Windows or Linux.
 
-# Compile
+## Compile
 
 ```
 go build
