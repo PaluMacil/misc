@@ -88,7 +88,7 @@ Misc. projects that haven't been moved to a dedicated repo of their own unless n
 
     *Language*: **C**
 
-11. [Badger Db Demo](./badger/README.md): An LSM / Value Log Key Value Store.
+11. [Badger Db Demo](./badger/README.md): An LSM / Value Log Key Value Store. Equal or barely slower than Bolt for reads and much faster for writes.
 
     *Language*: **Go**
 
@@ -104,6 +104,6 @@ My intent is not to have important, maintained projects in this repo. If somethi
 
 # Licenses
 
-Each misc project is licensed under an [MIT license](./LICENSE) unless the project folder contains a license. In that case, use that license for that project instead. Dependencies will also have licenses of thier own, but in most cases won't be in the repo (depending upon the language).
+Each misc project is licensed under an [MIT license](./LICENSE) unless the project folder contains a license. In that case, use that license for that project instead. Dependencies will also have licenses of their own, but in most cases won't be in the repo (depending upon the language).
 
 Animal images at the top of this document are [unicode emojis](http://www.alt-codes.net/animal-symbols.php) and might vary in appearance and are not my intellectual property.
