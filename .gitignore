@@ -8,6 +8,7 @@ obj/
 Migrations/
 dist/
 *.db
+*.bleve/
 
 # Test binary, build with `go test -c`
 *.test
