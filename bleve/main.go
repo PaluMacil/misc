@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path"
 	"strconv"
 	"time"
 
@@ -44,10 +45,20 @@ var friends = []Friends{
 		FavoriteFoods: []string{"humans", "zebra", "carrot"},
 		FavoriteColor: "green",
 	},
+	{
+		ID:            4,
+		Name:          "Alien Kraus",
+		Tall:          true,
+		NextHug:       time.Now(),
+		FavoriteFoods: []string{"hummus", "slime", "gilded harps"},
+		FavoriteColor: "gray",
+	},
 }
 
 func main() {
-	const indexFile = "example.bleve"
+	const dataDir = "data"
+	const indexName = "friends"
+	var indexFile = path.Join(dataDir, "indexes", indexName)
 	var (
 		err   error
 		index bleve.Index
@@ -71,7 +82,8 @@ func main() {
 	}
 
 	// index some data
-	for _, f := range friends {
+	for i, f := range friends {
+		log.Println("indexing", i+1, "of", len(friends), "friends:", f.Name)
 		id := strconv.Itoa(f.ID)
 		err := index.Index(id, f)
 		if err != nil {
@@ -79,26 +91,22 @@ func main() {
 		}
 	}
 
-	// search for some text
-	query := bleve.NewMatchQuery("hotdog")
+	// search for exact text
+	query := bleve.NewTermQuery("hotdog")
 	search := bleve.NewSearchRequest(query)
 	searchResults, err := index.Search(search)
 	if err != nil {
-		log.Fatalln("search 1:", err)
+		log.Println("FAILURE! Search 1:", err)
 	}
-	fmt.Println("Error:", err)
-	fmt.Println("Results for hotdag...")
+	fmt.Println("Results for hotdog...")
 	fmt.Println(searchResults)
-	fmt.Println(searchResults.Hits[0].Fields)
 	// search for text starting with...
 	query2 := bleve.NewPrefixQuery("hum")
 	search2 := bleve.NewSearchRequest(query2)
 	searchResults2, err := index.Search(search2)
 	if err != nil {
-		log.Fatalln("search 2:", err)
+		log.Println("FAILURE! Search 2:", err)
 	}
-	fmt.Println("Error:", err)
 	fmt.Println("Results for prefix 'hum'...")
 	fmt.Println(searchResults2)
-	fmt.Println(searchResults2.Hits[0].Fields)
 }
