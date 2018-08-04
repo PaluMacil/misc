@@ -9,6 +9,7 @@ Migrations/
 dist/
 *.db
 *.bleve/
+bleve/data/indexes/
 
 # Test binary, build with `go test -c`
 *.test

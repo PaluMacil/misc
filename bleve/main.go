@@ -20,6 +20,11 @@ type Friends struct {
 	FavoriteColor string
 }
 
+var (
+	duration32Minutes, _      = time.ParseDuration("32m")
+	durationAnHourAndAHalf, _ = time.ParseDuration("1.5h")
+)
+
 var friends = []Friends{
 	{
 		ID:            1,
@@ -41,7 +46,7 @@ var friends = []Friends{
 		ID:            3,
 		Name:          "Ben",
 		Tall:          true,
-		NextHug:       time.Now(),
+		NextHug:       time.Now().Add(durationAnHourAndAHalf),
 		FavoriteFoods: []string{"humans", "zebra", "carrot"},
 		FavoriteColor: "green",
 	},
@@ -50,6 +55,14 @@ var friends = []Friends{
 		Name:          "Alien Kraus",
 		Tall:          true,
 		NextHug:       time.Now(),
+		FavoriteFoods: []string{"hummus", "slime", "gilded harps"},
+		FavoriteColor: "gray",
+	},
+	{
+		ID:            5,
+		Name:          "Gerry Gillibrand",
+		Tall:          false,
+		NextHug:       time.Now().Add(duration32Minutes),
 		FavoriteFoods: []string{"hummus", "slime", "gilded harps"},
 		FavoriteColor: "gray",
 	},
@@ -92,7 +105,7 @@ func main() {
 	}
 
 	// search for exact text
-	query := bleve.NewTermQuery("hotdog")
+	query := bleve.NewMatchQuery("hotdog")
 	search := bleve.NewSearchRequest(query)
 	searchResults, err := index.Search(search)
 	if err != nil {
@@ -109,4 +122,13 @@ func main() {
 	}
 	fmt.Println("Results for prefix 'hum'...")
 	fmt.Println(searchResults2)
+	// search for text starting with...
+	query3 := bleve.NewWildcardQuery("*ll*")
+	search3 := bleve.NewSearchRequest(query3)
+	searchResults3, err := index.Search(search3)
+	if err != nil {
+		log.Println("FAILURE! Search 3:", err)
+	}
+	fmt.Println("Results for wildcard query '*ll*'...")
+	fmt.Println(searchResults3)
 }
