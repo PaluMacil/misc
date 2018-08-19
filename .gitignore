@@ -212,3 +212,4 @@ FakesAssemblies/
 
 CMakeFiles/
 .vs/
+file-encryption/encrypted.aes.txt
